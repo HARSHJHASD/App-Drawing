@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Drawing App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap file -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+  <!-- css stylssheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- jquery ui -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/jquery-ui.css">
+</head>
+<body>
+
+<div class="header" id="header">
+  Drawing App.
+</div>
+
+<div class="inputContainer">
+  <!-- color -->
+  <div class="input" id="colorInput">
+    <input type="color" list id="paintColor">
+  </div>
+  <!-- width of the color -->
+  <div class="input" id="thicknessInput">
+    <!-- circle correspondig to slider -->
+    <div class="" id="circle">
+    </div>
+  </div>
+  <!-- slider for width -->
+  <div class="input">
+    <!-- slider here -->
+    <div class="" id="slider">
+    </div>
+  </div>
+
+</div>
+
+<!-- \canvas contaier  -->
+<div id="container">
+  <canvas id="paint" width="500" height="400"></canvas>
+</div>
+
+<div class="inputContainer2">
+  <!-- erase -->
+  <div class="input2">
+    <span id="erase" class="button" >Erase</span>
+  </div>
+  <!-- save -->
+  <div class="input2">
+    <span id="save" class="button" >Save</span>
+  </div>
+  <!-- reset -->
+  <div class="input2">
+    <span id="reset" class="button" > Reset</span>
+  </div>
+</div>
+
+
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- jquery Ui -->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- jquery script -->
+<script src="app.js" charset="utf-8"></script>
+<!-- bootstrap javascript file -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
